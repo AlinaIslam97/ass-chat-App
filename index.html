@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="name-modal">
+    <div class="modal-content">
+      <h2>Welcome to Chat App</h2>
+      <input type="text" id="name-input" placeholder="Enter your name">
+      <button id="start-chat">Start Chat</button>
+    </div>
+  </div>
+
+  <div id="chat-app" style="display: none;">
+    <header class="chat-header">
+      <h1>Chat App</h1>
+    </header>
+    <div id="chat-container">
+      <div id="messages"></div>
+      <div class="message-input-container">
+        <input type="text" id="message-input" placeholder="Type your message here...">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
